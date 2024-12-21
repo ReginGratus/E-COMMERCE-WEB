@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANITRIX</title>
+    <link rel="icon" href="internet.png">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--My css-->
+    <link rel="stylesheet" href="style.css">
+    <!--Font awesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>ANITRIX🛍️</h1>
+        
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="navbar-link"><a href="contact.html">Contact</a></p>
+        </div>
+        <div class="navbar-menu-toggle" onclick="showNavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+<!--side navbar-->
+<div class="side-navbar" onclick="closeNavbar()">
+    <p style="text-align:right;">
+        <i class="fa-solid fa-xmark"></i>
+    </p>
+    <div class="side-navbar-links">
+        <p class="side-navbar-link"><a href="index.html">Home</a></p>
+        <p class="side-navbar-link"><a href="collection.html">Collections</a></p>
+        <p class="side-navbar-link"><a href="contact.html">Contact</a></p>
+    </div>
+</div>
+<!-- info fillup -->
+<div class="contact-container">
+   
+    <div class="form-section">
+        <h1>Contact Us</h1>
+        <form>
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full-name" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Contact Us</button>
+        </form>
+        <div class="contact-info">
+            <p><strong>Contact</strong><br>anitrix.com</p>
+            <p><strong>Based in</strong><br>Chennai , Tamilnadu</p>
+            <div class="social-icons">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                <!-- Add font awesome icons -->
+                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-instagram"></a>
+                  <a href="#" class="fa fa-twitter"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+   
+.navbar{
+    width:99%;
+    height: 60px;
+    
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.contact-container {
+    display: flex;
+    margin-top: 30px;
+    width: 70%;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.image-section {
+    flex: 1;
+}
+
+.form-section {
+    flex: 1;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+
+
+
+form label {
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #333;
+}
+
+form input,
+form textarea {
+    width: 50%;
+    padding: 0.5em;
+    margin: 0.5em 0 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display:flex
+}
+
+button {
+    padding: 0.8em;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+.contact-info {
+    margin-top: 1.5em;
+    color: #333;
+    margin-left: 70%;
+}
+
+.contact-info p {
+    margin: 0.5em 0;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 0.5em;
+    text-decoration: none;
+    color:black;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+button:hover{
+    color:black;
+    background-color: white;
+    border:3px solid black;
+
+}
+</style>
+
+ 
+ 
+    <script src="contact.js"></script>
+</body>
+
+</html>
